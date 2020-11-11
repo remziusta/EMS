@@ -1,14 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SidebarComponent } from './sidebar/sidebar.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 
 
 @NgModule({
-  declarations: [SidebarComponent, NavbarComponent],
+  declarations: [NavbarComponent, SidebarComponent],
   imports: [
     CommonModule
-  ]
+  ],
+  exports: [NavbarComponent,SidebarComponent]
 })
 export class EmsModule { }
