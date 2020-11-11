@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "EMS"
+    }
+  },
+  "defaultProject": "EMS",
+  "cli": {
+    "analytics": "eb3f4ca6-9ae8-4aab-875e-94aa5362edd7"
+  }
 }
