@@ -1,1 +1,28 @@
-<p>sidebar works!</p>
+<div class="content-wrap mt-10">
+    <igx-nav-drawer  id="navigation" #drawer [isOpen]="true" [pin]= "true" [pinThreshold]="0">
+        <ng-template   igxDrawer>
+          <nav>
+          <span igxDrawerItem igxRipple>
+              <igx-icon fontSet="material">group</igx-icon>
+              <span>Users</span>
+          </span>
+          <span igxDrawerItem igxRipple>
+                <igx-icon fontSet="material">engineering</igx-icon>
+            <span>Worker</span>
+          </span>
+          <span igxDrawerItem igxRipple>
+              <igx-icon fontSet="material">business</igx-icon>
+          <span>Departments</span>
+          </span>
+          <span igxDrawerItem igxRipple>
+              <igx-icon fontSet="material">location_on</igx-icon>
+          <span>Locations</span>
+          </span>
+          <span igxDrawerItem igxRipple>
+              <igx-icon fontSet="material">cancel</igx-icon>
+          <span>Log Out</span>
+          </span>
+          </nav>
+        </ng-template>
+    </igx-nav-drawer>
+</div>
