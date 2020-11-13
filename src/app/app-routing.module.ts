@@ -1,8 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { EmsModule } from './ems/ems.module';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path: '',
+    loadChildren: () => import('./ems/ems.module').then(m => m.EmsModule)
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
