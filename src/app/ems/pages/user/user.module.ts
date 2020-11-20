@@ -18,6 +18,11 @@ const routes: Routes = [
       {
         path:"detail",
         component: UserDetailComponent
+      },
+      {
+        path: "",
+        redirectTo: "detail",
+        pathMatch: "full"
       }
     ]
   }
