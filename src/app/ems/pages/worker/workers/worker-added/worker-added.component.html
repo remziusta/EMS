@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="row ">
+        <div class="col-md-9">
+            <form class="input-group-form" >
+            <igx-input-group>
+                <input igxInput name="fullName" type="text"  required="true"/>
+                <label igxLabel for="fullName">Ad Soyad</label>
+                <igx-suffix>
+                    <igx-icon>person</igx-icon>
+                </igx-suffix>
+            </igx-input-group>
+            <igx-input-group>
+                <igx-prefix>+90</igx-prefix>
+                <label igxLabel for="phone">Telefon</label>
+                <input igxInput type="text" [igxMask]="'(###) 000-00-00'"/>
+                <igx-suffix>
+                    <igx-icon>phone</igx-icon>
+                </igx-suffix>  
+            </igx-input-group>
+            <igx-input-group>
+                <label igxLabel for="email">E-mail</label>
+                <input igxInput name="email" type="email" required="true"/>
+                <igx-suffix>
+                    <igx-icon>email</igx-icon>
+                </igx-suffix>
+            </igx-input-group>
+            <igx-input-group>
+                <label igxLabel for="dep">Departman</label>
+                <input igxInput name="dep" type="text" required="true"/>
+                <igx-suffix>
+                    <igx-icon>business</igx-icon>
+                </igx-suffix>
+            </igx-input-group>
+            <button igxButton="raised" class="mt-3" igxRipple type="submit" routerLink="users">Gönder</button>
+        </form>
+        </div>
+    </div>
+</div>

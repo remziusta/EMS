@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row  text-center">
         <div class="col-md-9">
-            <h3>Kullanıcılar</h3>
+            <h3>Çalışanlar</h3>
         </div>
     </div>
     <div class="row  mt-5">
@@ -10,22 +10,20 @@
                 <thead>
                   <tr>
                     <th scope="col">#</th>
-                    <th scope="col">Kullanıcı Adı</th>
                     <th scope="col">Ad Soyad</th>
                     <th scope="col">Telefon</th>
                     <th scope="col">E-mail</th>
-                    <th scope="col">Yetki</th>
+                    <th scope="col">Departman</th>
                     <th scope="col">Seç</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <th scope="row">1</th>
-                    <td>admin</td>
                     <td>Remzi USTA</td>
                     <td>+90 552 007 74 43</td>
                     <td>ustaremzii@gmail.com</td>
-                    <td>admin</td>
+                    <td>İstanbul/Pendik</td>
                     <td class="text-center">    
                        <input type="checkbox" class="form-check-input" id="check">
                     </td>
@@ -37,13 +35,13 @@
 
     <div class="row  mt-3 justify-content-center">
         <div class="col-md-3 ">
-            <button routerLink="user-added" type="button" class="btn btn-secondary">Ekle</button>
+            <button routerLink="worker-added" type="button" class="btn btn-secondary">Ekle</button>
         </div>
         <div class="col-md-3 ">
             <button type="button" class="btn btn-danger">Sil</button>
         </div>
         <div class="col-md-3 ">
-            <button [routerLink]="[ 'user-update', 4 ]" type="button" class="btn btn-success">Güncelle</button>
+            <button [routerLink]="[ 'worker-update', 5 ]" type="button" class="btn btn-success">Güncelle</button>
         </div>
     </div>
 </div>
