@@ -2,8 +2,6 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home.component';
 import { RouterModule, Routes } from '@angular/router';
-import { UserModule } from './user/user.module';
-
 const routes: Routes = [
   {
     path: "",
@@ -16,6 +14,10 @@ const routes: Routes = [
   {
     path: "workers",
     loadChildren: () => import("../pages/worker/worker.module").then(m => m.WorkerModule)
+  },
+  {
+    path: "departments",
+    loadChildren: () => import("../pages/department/department.module").then(m => m.DepartmentModule)
   }
 ];
 

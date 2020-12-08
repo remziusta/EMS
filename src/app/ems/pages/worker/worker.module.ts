@@ -6,7 +6,7 @@ import { WorkerAddedComponent } from './workers/worker-added/worker-added.compon
 import { WorkerUpdateComponent } from './workers/worker-update/worker-update.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
-import { IgxFocusModule, IgxIconModule, IgxInputGroupModule, IgxMaskModule, IgxTextSelectionModule } from 'igniteui-angular';
+import { IgxFocusModule, IgxIconModule,IgxButtonModule, IgxInputGroupModule, IgxMaskModule, IgxTextSelectionModule } from 'igniteui-angular';
 
 const routes: Routes = [
   {
@@ -34,6 +34,7 @@ const routes: Routes = [
     IgxTextSelectionModule,
     IgxFocusModule,
     IgxIconModule,
+    IgxButtonModule,
     RouterModule.forChild(routes)
   ]
 })
